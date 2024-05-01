@@ -26,7 +26,9 @@ This web application allows users to fetch and display information about books a
 1. Ensure you have a web server (e.g., Apache) with PHP and MySQL installed.
 2. Import the provided SQL database dump (`book_store.sql`) into your MySQL database.
 3. Place the PHP files (`books.php`, `author.php`, `publish.php`) in the appropriate directory accessible by your web server.
+5. Run server on the file that is called `main.php`
 4. Open the `index.html` file in your web browser to access the Book Store web application.
+6. Dont forget to change username,password and portnumber in  the PHP files (`books.php`, `author.php`, `publish.php`,`main.php`) in the line of connecting to the database.
 
 ## Usage
 

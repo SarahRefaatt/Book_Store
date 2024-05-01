@@ -54,9 +54,9 @@
     $username = "root";
     $password = "usbw";
     $dbname = "book_store";
-
+    $postnumber=3307;
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname, 3307);
+    $conn = new mysqli($servername, $username, $password, $dbname, $postnumber);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);

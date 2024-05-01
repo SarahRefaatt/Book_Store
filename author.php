@@ -54,9 +54,9 @@
     $username = "root";
     $password = "usbw";
     $dbname = "book_store";
-
+    $postnumber=3307;
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname, 3307);
+    $conn = new mysqli($servername, $username, $password, $dbname, $postnumber);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -66,7 +66,7 @@
     $sql = "SELECT a.name, a.nationality
             FROM book_store.author AS a
             INNER JOIN book_store.book AS b ON a.id = b.author_id
-            WHERE b.title = 'science'";
+            WHERE b.title LIKE '%science%'";
     $result = $conn->query($sql);
 
     // Display table if authors exist
